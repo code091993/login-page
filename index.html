@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                <h1>LOGIN</h1>
+                
+                <form action="">
+                    <input type="email" class="input-box" placeholder="Enter Your Email" required>
+                    <input type="password" class="input-box" placeholder="Enter Your Password" required>
+                    <button type="submit" class="submit-btn">submit</button>
+                    <input type="checkbox" name="" id=""><span>Remember me</span>
+                    <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                    <a href="">Forget password</a>
+                </form>
+
+                </div>
+                <div class="card-back">
+                    <h1>REGISTER</h1>
+                    
+                    <form action="">
+                        <input type="text" class="input-box" placeholder="Enter Your Name" required>
+                        <input type="email" class="input-box" placeholder="Enter Your Email" required>
+                        <input type="password" class="input-box" placeholder="Enter Your Password" required>
+                        <button type="submit" class="submit-btn">submit</button>
+                        <input type="checkbox" name="" id=""><span>Remember me</span>
+                        <button type="button" class="btn" onclick="openLogin()">I've An Account</button>
+                        <a href="">Forget password</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var card = document.getElementById("card");
+
+        function  openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+                card.style.transform = "rotateY(0deg)";
+            
+        }
+    </script>
+</body>
+</html>
